@@ -1,0 +1,16 @@
+services:
+  relay:
+    image: scsibug/nostr-rs-relay
+    ports:
+      - "7777:8080"
+  blossom:
+    image: ghcr.io/hzrd149/blossom-server:master
+    build: .
+    ports:
+      - 3002:3000
+    volumes:
+      - ./config.yaml:/app/config.yml
+
+
+volumes:
+  data: {}

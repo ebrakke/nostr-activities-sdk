@@ -1,0 +1,50 @@
+{
+  "name": "nostr-activities-sdk",
+  "type": "module",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "typings": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "description": "SDK for interacting with NOSTR activities",
+  "scripts": {
+    "build": "bun run build.mjs",
+    "prepublishOnly": "bun run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "bun"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ebrakke/nostr-activities-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ebrakke/nostr-activities-sdk.git"
+  },
+  "bugs": "https://github.com/ebrakke/nostr-activities-sdk/issues",
+  "author": "Erik Brakke <dev@brakke.cc>",
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@nostr-dev-kit/ndk": "^2.8.2",
+    "@types/bun": "^1.0.0",
+    "@types/uuid": "^10.0.0",
+    "bun-plugin-dts": "^0.2.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "blossom-client-sdk": "^0.9.1",
+    "nostr-tools": "^2.7.2",
+    "uuid": "^10.0.0"
+  },
+  "peerDependencies": {
+    "nostr-tools": "^2.7.2",
+    "@nostr-dev-kit/ndk": "^2.8.2"
+  }
+}

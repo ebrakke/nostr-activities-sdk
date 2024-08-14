@@ -1,0 +1,7 @@
+upload:
+  enabled: true
+  requireAuth: true
+storage:
+  rules:
+    - type: "*"
+      expiration: 2 days
